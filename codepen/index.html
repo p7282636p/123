@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>hw1</title>
+  <link rel="stylesheet" type="text/css" href="./style/css">
+  <script async src="./js/jscode.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <!-- 功能列 -->
+    <!--  
+    為了讓標題和功能按鈕都並排所以class都是func 但標題自己有格式變化所以多給他id 
+  -->
+    <div class="func" id=title>
+      <h1>出清版</h1></div>
+    <div class="func">功能1</div>
+    <div class="func">功能2</div>
+    <a href="#clothes">
+      <div class="func">找衣服</div>
+    </a>
+    <!-- ↑錨點連結的應用 
+    但不知為何又邊有個點點@@ -->
+    <div class="func">
+      <a href="#textbook">找課本</a>
+    </div>
+    <!-- ↑兩種 一種是針對字 一種針對div -->
+    <div class="func" id="thetime">
+    </div>
+  </div>
+  <!-- buy和sale兩個div並排 -->
+  <div class="search" id="buy">
+    <!-- 為了讓他們都margin 0px auto自動置中都設cond 但大標另給st做其他設定 -->
+    <div class="cond st">buy</div>
+    <div class="cond item">search</div>
+    <div class="cond item">catalogue</div>
+    <div class="cond item">price</div>
+  </div>
+  <div class="search" id="sale">
+    <div class="cond st">sale</div>
+    <div class="cond item">search</div>
+    <div class="cond item">catalogue</div>
+    <div class="cond item">price</div>
+  </div>
+  <!-- 試玩跑馬燈 -->
+  <div class="marquee">
+    <marquee direction="left" scrollamount="8" behavior="alternate" bgcolor="#F19483" height="50px" width="98.7%" ;>
+      <font size="5px">出清特賣~~~!</font>
+    </marquee>
+  </div>
+  <!-- 兩個群組左三右二 -->
+  <div class="recom" id="rl">
+    <div class="boxleft" id="clothes">找衣服</div>
+    <div class="boxleft" id="textbook">找課本</div>
+    <div class="boxleft">找房子</div>
+  </div>
+  <div class="recom" id="rr">
+    <div class="boxright">優惠</div>
+    <div class="boxright">最新</div>
+  </div>
+  
+<!-- 尚未練習表單 -->
+</body>
+<bottom>
+  <div class="bot">cc idogugi</div>
+</bottom>
+
+</html>

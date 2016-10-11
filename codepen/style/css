@@ -1,0 +1,123 @@
+html {
+  width: 100%; /*不指定長度而用比例*/
+  background: #FCFAF2;
+  text-align: center; /*讓search兩個div可置中*/
+  font-family: 微軟正黑體;
+  
+}
+
+.header {/*粉色部分*/
+  height: 45px;
+  background: #FEDFE1;
+  padding: 5px;
+  text-align: left;/*讓標題 功能div置左*/
+}
+
+.func {
+  width: 100px;
+  text-align: center;
+  display: inline-block;
+  background: #FFFFFB;
+  line-height: 45px;/*製造垂直置中效果*/
+  vertical-align: top;/*讓並排的div靠上對齊*/
+  border-radius:3px;
+}
+
+#thetime {
+  color: white ;
+  padding : 0px 5px;
+  font-family: "Arial";
+  background: #FF95CA ;
+  width: 200px;
+}
+
+#title {/*出清版三個字*/
+  width: 200px;
+  text-align: left;
+  line-height: 2px;
+  /*因為多設h1讓行距太寬所做的調整*/
+  padding-left:5px;
+}
+
+.search {/*buy和sale兩塊*/
+  display: inline-block;
+  height: 600px;
+  width: 48%;/*用比例*/
+  text-align: center;
+  padding: 5px;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.cond {/*buy search...那四塊*/
+  width: 200px;
+  margin: 0px auto;/*自動置中*/
+  margin-bottom: 5px;
+}
+.item {/*灰色三塊 和buy大標作區隔*/
+  height: 50px;
+  line-height: 50px;
+  padding: 10px;
+  font-size: 20px;
+  background: #BDC0BA;
+  border-radius: 5px;
+}
+
+.st {/*buy和 sale*/
+  height: 200px;
+  line-height: 200px;
+  font-size: 75px;
+}
+#buy{
+  /*背景圖片*/
+  background: url(http://pcncsa.org.tw/wp-content/uploads/2016/08/001-16-13.jpg);
+  /*
+  background-position:center;
+  background-repeat:no-repeat;
+  */
+  background-size:cover;/*縮放符合div大小*/
+}
+#sale{
+  background: url(http://www.shefinds.com/files/2013/07/sale-on-sale.jpg);
+  background-size: contain;/*縮小以放入div*/
+  background-position:center;/*置中*/
+  /*預設是repeat*/
+}
+.recom {/*推薦 藍色兩個群組左三右二*/
+  height: 500px;
+  display: inline-block;
+  vertical-align: top;/*群組向上對齊*/
+}
+
+#rl {/*左三*/
+  width: 59%;
+}
+
+#rr {/*右二*/
+  width: 39%
+}
+
+.boxleft {/*左邊藍盒子*/
+  background: #3A8FB7;
+  height: 122px;
+  margin-bottom: 5px;
+  line-height: 120px;
+  font-size: 60px;
+}
+
+.boxright {/*右邊藍盒子*/
+  background: #58B2DC;
+  height: 185px;
+  line-height: 185px;
+  margin-bottom: 5px;
+  font-size: 70px;
+}
+.bot{/*寫好玩的bottom*/
+  height:30px;
+  background:#aaa;
+  color:white;
+  line-height:30px;
+}
+.marquee{/*跑馬燈垂直置中*/
+  line-height:50px;
+}
