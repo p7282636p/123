@@ -121,3 +121,25 @@ html {
 .marquee{/*跑馬燈垂直置中*/
   line-height:50px;
 }
+
+
+path, circle {
+  fill: transparent;
+  stroke: #222;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation: dash 5s ease;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  transition: .3s;
+}
+
+.cat {
+  stroke: #f9c89d;
+}
+
+.ball {
+  stroke: #f99ad5;
+}
