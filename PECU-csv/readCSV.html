@@ -52,13 +52,10 @@ d3.csv("./stocks.csv",
 				return yset ; 
 			});
 		ctrl.append("path").data([data]).attr("class","line").attr("d",valueline);
-		var circleBox = d3.select("body").select("svg").append("circle")
-		circleBox
-    	.attr("cx", xset)
-    	.attr("cy", yset)
-    	.attr("r", 5);
-    	var circleBox = circleBox  ;
-		
+
+		var circleBox = d3.select("body").select("svg").append("circle");
+		var circleBox = 
+		circleBox.data([data]).attr("cx", xset).attr("cy", yset ).attr("r", 5).function(return circleBox);
 	}
 
 );
