@@ -49,11 +49,20 @@ d3.csv("./stocks.csv",
 			}).
 		y(
 			function(d){
-				yset =  (d.close)/770*600 ;
+				yset =  (d.close)/770*height ;
 				console.log(yset);
 				return yset ; 
 			});
-		var circle = d3.circle().
+		ctrl.append("path").data([data]).attr("class","line").attr("d",valueline);
+		var cx = d3.select("body").selectAll("p").data(theData)cx(function(d,i)
+			{ 
+				xset = (width/ln)*i;
+				console.log(xset);
+				return xset ;
+				}
+					);
+		var cy = 
+		var valuecircle = ctrl.append("circle").
 		cx(
 			function(d,i){ 
 				xset = (width/ln)*i;
@@ -65,9 +74,9 @@ d3.csv("./stocks.csv",
 				yset =  (d.close)/770*600 ;
 				console.log(yset);
 				return yset ; 
-			});
-
-		ctrl.append("path").data([data]).attr("class","line").attr("d",valueline);
+			}
+			);
+		
 		ctrl.append("circle").data([data]).attr("class","circle").attr("cx",cx).attr("cy",cy).attr("r","2");
 	}
 
