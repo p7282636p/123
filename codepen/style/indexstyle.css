@@ -122,7 +122,10 @@ html {
   line-height:50px;
 }
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 path, circle {
   fill: transparent;
   stroke: #222;
@@ -142,4 +145,8 @@ path, circle {
 
 .ball {
   stroke: #f99ad5;
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes
