@@ -7,7 +7,19 @@
   <style>
   	.line{
   		fill: none;
+  		stroke-width:3;
+  		stroke: green ;
   	}
+  	.circle {
+07
+      stroke-width: 1;
+08
+      fill: #3080d0;
+09
+      stroke: #3080d0;
+10
+    }
+
   </style>
 </head>
 <body>
@@ -41,11 +53,12 @@ d3.csv("./stocks.csv",
 			}).
 		y(
 			function(d){
-				yset =  (d.close);
+				yset =  (d.close)/770*600 ;
 				console.log(yset);
 				return yset ; 
 			});
 		ctrl.append("path").data([data]).attr("class","line").attr("d",valueline);
+		ctrl.append("circle").data([data]).attr("class","circle").attr(cx = "x").attr(cy = "y").attr(r="2");
 	}
 
 );
