@@ -54,7 +54,7 @@ d3.csv("./stocks.csv",
 		ctrl.append("path").data([data]).attr("class","line").attr("d",valueline);
 		var circleBox = d3.select("body").select("svg").append("circle");
 		circleBox.data([data]).attr("cx", xset).attr("cy", yset ).attr("r", 5);
-		for (;xset< width && yset<height ){
+		for (;xset< width ){
 			circleBox += circleBox.data([data]).attr("cx", xset).attr("cy", yset ).attr("r", 5)
 		} 
 	}
