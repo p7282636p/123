@@ -54,8 +54,14 @@ d3.csv("./stocks.csv",
 		ctrl.append("path").data([data]).attr("class","line").attr("d",valueline);
 		var circleBox = d3.select("body").select("svg").append("circle");
 		circleBox.data([data]).attr("cx", xset).attr("cy", yset ).attr("r", 5);
+		var xset = function(d,i){
+					xset =(width/ln)*i;
+					return xset;
+				};
 		for (;xset< width ){
-			circleBox += circleBox.data([data]).attr("cx", xset).attr("cy", yset ).attr("r", 5)
+			var yset = (d.close)/770*height;
+			return yset; 
+			circleBox += circleBox.data([data]).attr("cx", xset).attr("cy", yset ).attr("r", 5);
 		} 
 	}
 
